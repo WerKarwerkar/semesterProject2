@@ -1,2 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$custom-footer-bg: #d9d9d9; 
+$logo1: 'Michroma', sans-serif;
+$custom-footer-font: 'Mplus 1p', sans-serif;
+$custom-paragraph-font: 'Italiana', sans-serif;
+
+.custom-hr {
+    border-top: 2px solid black;
+  }
+  
+
+.footer {
+  background-color: $custom-footer-bg;
+
+  h4 {
+    font-family: $logo1;
+    font-size: 32px; 
+  }
+
+  p {
+    font-family: $custom-footer-font;  
+  }
+}
+
+.bg-image {
+  background: url('/assets/img/expensive car 1.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.hero-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-family: $logo1;
+  font-size: 64px;
+}   
+h2 {
+  font-family: $custom-paragraph-font;
+}
+.social-links {
+    .bi {
+        color: black;                                                       
+    }       
+}

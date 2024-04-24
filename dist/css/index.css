@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10707,6 +10710,49 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.custom-hr {
+  border-top: 2px solid black;
+}
+
+.footer {
+  background-color: #d9d9d9;
+}
+.footer h4, .footer .h4 {
+  font-family: "Michroma", sans-serif;
+  font-size: 32px;
+}
+.footer p {
+  font-family: "Mplus 1p", sans-serif;
+}
+
+.bg-image {
+  background: url("/assets/img/expensive car 1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.hero-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-family: "Michroma", sans-serif;
+  font-size: 64px;
+}
+
+h2, .h2 {
+  font-family: "Italiana", sans-serif;
+}
+
+.social-links .bi {
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map */
