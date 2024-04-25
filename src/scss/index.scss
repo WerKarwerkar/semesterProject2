@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import '../../node_modules/bootstrap/scss/bootstrap';
 
+
+$primary: #293335;
 $custom-footer-bg: #d9d9d9; 
 $logo1: 'Michroma', sans-serif;
 $custom-footer-font: 'Mplus 1p', sans-serif;
-$custom-paragraph-font: 'Italiana', sans-serif;
+ 
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
-.custom-hr {
-    border-top: 2px solid black;
-  }
-  
 
 .footer {
   background-color: $custom-footer-bg;
@@ -31,13 +29,10 @@ $custom-paragraph-font: 'Italiana', sans-serif;
   background-size: cover;
 }
 
-.navbar {
-  background: transparent;
-}
-
 .hero-section {
   height: 75vh;
   display: flex;
+  width: 90%;
   align-items: center;
   justify-content: center;
 }
@@ -45,12 +40,40 @@ $custom-paragraph-font: 'Italiana', sans-serif;
 .navbar-brand {
   font-family: $logo1;
   font-size: 64px;
-}   
-h2 {
-  font-family: $custom-paragraph-font;
-}
+}  
+
+
 .social-links {
     .bi {
         color: black;                                                       
     }       
+}
+
+.custom-rounded {
+    border-radius: 30px;
+}
+
+.form-inline {
+    max-width: 50%;
+    margin: auto;
+}
+.nosubmit {
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 13px center;
+}
+
+.nav-item {
+    .nav-link {
+        color: black;
+        font-family: $custom-footer-font;
+    }       
+
+}
+
+.sign-custom {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-line {
+    border-bottom: 1px solid rgba(41, 51, 53, 0.5);
 }
