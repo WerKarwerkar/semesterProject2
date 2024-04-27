@@ -15,55 +15,206 @@
 
 <body>
     <header class="bg-image">
-        <div class="container-fluid d-flex justify-content-end">
+        <div class="container-fluid d-flex justify-content-end buttons">
             <button class="btn btn-link mt-5 sign-custom">Sign Up</button>
             <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4">Log in</button>
         </div>
-        <div class="container-fluid d-flex flex-column align-items-center">
+        <div class="container-fluid d-flex flex-column align-items-center mt-3">
             <!-- Logo  -->
-            <a class="navbar-brand" href="#">AlleBids</a>             
+            <a class="navbar-brand fs-1" href="#">AlleBids</a> 
 
             <!-- Navigation Bar -->
-            <div class="container-fluid bottom-line">  
-            <ul class="nav nav-underline justify-content-center">
+            <div class="container-fluid">  
+            <ul class="nav justify-content-center">
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Buy</a>
+                  <a class="nav-link fs-6" href="#">Buy</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Sell</a>
+                  <a class="nav-link fs-6" href="#">Sell</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link fs-6" href="#">Contact</a>
                 </li>
               </ul>
               </div>
-
-
-
-
-
      
-
         <!-- Hero Section -->
         <section class="hero-section text-center d-flex align-items-start justify-content-center">
             <div class="container-fluid">
                 <form class="form-inline mt-3">
                     <div class="input-group">
                         <input class="form-control custom-rounded nosubmit" type="search" placeholder="" aria-label="Search">
-                        <!-- <span class="input-group-text bg-transparent border-0"><i class="bi bi-search"></i></span> -->
                     </div>
+                    
                 </form>
             </div>
         </section>
     </header>
+  
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col mb-3">
+            <h2 class="subject mb-3 fs-4">What are you</h2>
+            <h2 class="subject fs-4">looking for?</h2>
+            <a href="#" class="float-end custom-font sign-custom1 mb-3">view all</a>
+          </div>
+        </div>
+        <div class="row g-md-2">
+          <div class="col-6 mb-2 mb-md-2">
+            <div class="category-image position-relative">
+              <img src="./assets/img/shoes 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="shoes and bags">
+              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+              <h5 class="fs-5">Accessorize</h5>
+              <h6 class="fs-6">Bags, shoes and more.</h4>
+              <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-6">
+            <div class="row g-md-2">
+              <div class="col-6 mb-2 mb-md-2">
+                <div class="category-image position-relative">
+                <img src="./assets/img/carrera 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera watch">
+                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                <h5 class="fs-5">Jewellery</h5>
+                <h6 class="fs-6">Watches, rings...</h6>
+                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+              </div>
+            </div>
+            </div>
+            
+            <div class="col-6 mb-2">
+              <div class="category-image position-relative">
+                <img src="./assets/img/carrera 2 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera car">
+                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                <h5>Cars</h3>
+                <h6>Sport, oldtimers..</h4>
+                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+              </div>
+            </div>
+            </div>
+            <div class="row g-md-2">
+              <div class="col-6 mb-2 mb-md-2">
+                <div class="category-image position-relative">
+                <img src="./assets/img/mona lisa 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="mona lisa grafitti">
+                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                <h5>Art and furnitures</h3>
+                <h6>Paintings, furnitures...</h4>
+                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+              </div>
+              </div>
+              </div>
+              <div class="col-6 mb-2 mb-md-2">
+                <div class="category-image position-relative">
+
+                  <img src="./assets/img/malibu 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="view for the house in malibu">
+                  <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                  <h5>Properties</h3>
+                  <h6>Houses, yachts...</h4>
+                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Delivery images -->
+        <section class="delivery">
+        <div class="container mt-5">
+          <div class="row text-center">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img src="./assets/img/shipping/group1.jpg" class="img-fluid">
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <img src="./assets/img/shipping/group2.jpg" class="img-fluid">
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <img src="./assets/img/shipping/group3.jpg"class="img-fluid">
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <img src="./assets/img/shipping/group4.jpg" class="img-fluid">
+                </div>
+            </section>
+      
+      
+            <!-- Recent listings -->
+        <section class="recent listings">
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="col mb-3">
+                    <h2 class="subject mb-3 fs-4">Recent listings</h2>
+                    <a href="#" class="float-end custom-font sign-custom1 mb-3">view all</a>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-4 mb-5">
+                              <div class="">
+                                <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
+                                <div class="card-body">
+                                  <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
+                                  <p class="card-text mb-0">Current bid: 5 credits</p>
+                                  <p class="card-text">Seller: Rusty3erf</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                    
+                            <div class="col-md-4 mb-5">
+                                <div class="">
+                                    <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
+                                    <div class="card-body">
+                                    <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
+                                    <p class="card-text mb-0">Current bid: 5 credits</p>
+                                    <p class="card-text">Seller: Rusty3erf</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="col-md-4 mb-5">
+                                <div class="">
+                                  <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
+                                  <div class="card-body">
+                                    <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
+                                    <p class="card-text mb-0">Current bid: 5 credits</p>
+                                    <p class="card-text">Seller: Rusty3erf</p>
+                                    <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+        </section>
 
 
 
 
 
-
-
-
+    <!-- Newsletter -->
+   <section class="newsletter">
+        <div class="container-fluid newsletter-bg text-center p-5 ">
+            <p class="fs-6 custom-font mb-4">Sign up for our NEWSLETTER</p>
+            <div class="row">
+            <form class="form-inline d-flex align-items-center justify-content-center">
+                <input class="form-control custom-rounded me-2" type="search" placeholder="email address" aria-label="Search">
+                <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Join AlleBids</a>
+            </form>
+        </div>
+    </section>
 
 
 
@@ -75,21 +226,21 @@
     
 
     <!-- Footer -->
-    <footer class="footer custom-footer-bg mt-5">
+    <footer class="footer-bg">
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="logo1 mt-3 mb-3">AlleBids</h4>
-                    <p class="custom-footer-font">Address: 1234 Street, San Diego, California</p>
-                    <p class="custom-footer-font">contact@allebids.com</p>
-                    <p class="custom-footer-font">+1 0123 456 789</p>
-
+                    <p class="fs-6">Address: 1234 Street, San Diego, California</p>
+                    <p class="fs-6">contact@allebids.com</p>
+                    <p class="fs-6">+1 0123 456 789</p>
+    
                     <div class="social-links">
                     <a href="https://www.instagram.com"><i class="bi bi-instagram px-2"></i></a>        
                     <a href="https://www.facebook.com"><i class="bi bi-facebook px-2"></i></a>
                     <a href="https://twitter.com"><i class="bi bi-twitter px-2"></i></a>
                     </div>
-                    <p class="mt-3 custom-footer-font">Copyright © 2024 AlleBids, All rights reserved.</p>
+                    <p class="mt-3 custom-font mb-2">Copyright © 2024 AlleBids, All rights reserved.</p>
                 </div>
             </div>
         </div>

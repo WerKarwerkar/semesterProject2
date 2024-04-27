@@ -10711,41 +10711,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.footer {
-  background-color: #d9d9d9;
-}
-.footer h4, .footer .h4 {
-  font-family: "Michroma", sans-serif;
-  font-size: 32px;
-}
-.footer p {
-  font-family: "Mplus 1p", sans-serif;
-}
-
 .bg-image {
   background: url("/assets/img/expensive car 1.jpg") no-repeat center center;
   background-size: cover;
 }
 
-.hero-section {
-  height: 75vh;
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand {
-  font-family: "Michroma", sans-serif;
-  font-size: 64px;
-}
-
-.social-links .bi {
-  color: black;
+.buttons .btn {
+  font-family: "Mplus 1p", sans-serif;
 }
 
 .custom-rounded {
   border-radius: 30px;
+}
+
+.sign-custom {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Mplus 1p", sans-serif;
+}
+
+.hero-section {
+  height: 75vh;
+  display: flex;
+  width: 60%;
 }
 
 .form-inline {
@@ -10757,18 +10745,84 @@ textarea.form-control-lg {
   background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 13px center;
 }
 
+.navbar-brand {
+  font-family: "Michroma", sans-serif;
+}
+
 .nav-item .nav-link {
   color: black;
   font-family: "Mplus 1p", sans-serif;
 }
 
-.sign-custom {
-  font-weight: bold;
-  text-decoration: none;
+.subject {
+  font-family: "Michroma", sans-serif;
+  font-size: 32px;
 }
 
-.bottom-line {
-  border-bottom: 1px solid rgba(41, 51, 53, 0.5);
+.sign-custom1 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 144, 37);
+  text-decoration-thickness: 3px;
+}
+
+.custom-rounded2 {
+  border-radius: 8px;
+}
+
+.category-text h5, .category-text .h5, .category-text h6, .category-text .h6 {
+  font-family: "Mplus 1p", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.hover-overlay {
+  transition: filter 0.5s ease;
+}
+
+.hover-overlay:hover {
+  filter: brightness(70%);
+}
+
+.category-text {
+  transition: opacity 0.3s ease;
+}
+
+.category-text.hover-show {
+  opacity: 0;
+}
+
+.category-image:hover .category-text {
+  display: block !important;
+  opacity: 2;
+}
+
+.card-body h5, .card-body .h5, p, a {
+  font-family: "Mplus 1p", sans-serif;
+}
+
+.newsletter-bg {
+  background-color: rgb(196, 201, 198);
+}
+
+.newsletter-bg p {
+  font-family: "Michroma", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.social-links .bi {
+  color: rgb(255, 255, 255);
+}
+
+.footer-bg {
+  background-color: rgb(41, 51, 53);
+}
+.footer-bg h4, .footer-bg .h4 {
+  font-family: "Michroma", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.footer-bg p {
+  font-family: "Mplus 1p", sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=index.css.map */

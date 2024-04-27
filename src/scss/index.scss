@@ -4,76 +4,156 @@
 
 
 $primary: #293335;
-$custom-footer-bg: #d9d9d9; 
 $logo1: 'Michroma', sans-serif;
-$custom-footer-font: 'Mplus 1p', sans-serif;
+$custom-font: 'Mplus 1p', sans-serif;
  
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 
-.footer {
-  background-color: $custom-footer-bg;
 
-  h4 {
-    font-family: $logo1;
-    font-size: 32px; 
-  }
-
-  p {
-    font-family: $custom-footer-font;  
-  }
-}
-
+//Header
 .bg-image {
   background: url('/assets/img/expensive car 1.jpg') no-repeat center center;
   background-size: cover;
+
 }
 
-.hero-section {
-  height: 75vh;
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand {
-  font-family: $logo1;
-  font-size: 64px;
-}  
-
-
-.social-links {
-    .bi {
-        color: black;                                                       
-    }       
+.buttons {
+    .btn {
+        font-family: $custom-font;
+    }
 }
 
 .custom-rounded {
     border-radius: 30px;
 }
 
+.sign-custom {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: $custom-font;
+  }
+
+
+//Hero Section
+.hero-section {
+  height: 75vh;
+  display: flex;
+  width: 60%;
+}
+
 .form-inline {
     max-width: 50%;
     margin: auto;
 }
+
 .nosubmit {
     background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 13px center;
 }
 
+
+
+ //Navigation
+.navbar-brand {
+  font-family: $logo1;
+}  
+
 .nav-item {
     .nav-link {
         color: black;
-        font-family: $custom-footer-font;
+        font-family: $custom-font;
     }       
 
 }
 
-.sign-custom {
-  font-weight: bold;
-  text-decoration: none;
+
+//Categories 
+
+.subject {
+    font-family: $logo1;
+    font-size: 32px; 
+}
+.sign-custom1 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgba(218, 144, 37, 1);
+    text-decoration-thickness: 3px;
+  }
+
+  .custom-rounded2 {
+    border-radius: 8px;
 }
 
-.bottom-line {
-    border-bottom: 1px solid rgba(41, 51, 53, 0.5);
+.category-text {
+    h5, h6 {
+        font-family: $custom-font;
+        color:rgba(255, 255, 255, 1);
+    }
+    
 }
+
+.hover-overlay {
+    transition: filter 0.5s ease;
+}
+
+.hover-overlay:hover {
+    filter: brightness(70%); 
+
+}
+.category-text {
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-text.hover-show {
+    opacity: 0;
+  }
+  
+  
+  .category-image:hover .category-text {
+    display: block !important; 
+    opacity: 2; 
+}
+
+ // Recent Listings
+
+ .card-body h5, p, a {
+    font-family: $custom-font;  
+}
+
+
+//Newsletter
+
+
+    .newsletter-bg {
+    background-color: rgba(196, 201, 198, 1);
+
+ }
+ .newsletter-bg {
+    p {
+        font-family: $logo1;
+        color: rgba(255, 255, 255, 1);
+        }
+ }
+
+
+// Footer
+
+.social-links {
+    .bi {
+        color: rgba(255, 255, 255, 1);                                                      
+    }       
+}
+
+.footer-bg {
+    background-color: rgba(41, 51, 53, 1);
+  
+    h4 {
+      font-family: $logo1;
+      color: rgba(255, 255, 255, 1);
+    }
+  
+    p {
+      font-family: $custom-font;
+      color:rgba(255, 255, 255, 1);  
+    }
+  }
