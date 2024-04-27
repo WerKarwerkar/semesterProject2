@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+$primary: #293335;
+$secondary: rgba(189, 214, 221, 1);
+
+$logo1: 'Michroma', sans-serif;
+$custom-font: 'Mplus 1p', sans-serif;
+ 
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+    // header
+
+.bg-blue {
+    background-color: rgba(189, 214, 221, 1);
+}
+
+.border-custom-color {
+    border-bottom: 2px solid $secondary; 
+}
+.custom-rounded {
+    border-radius: 30px;
+}
+
+// Profile.html //
+// Header //
+
+.user {
+    font-family: $logo1;
+}
+
+
+.hr-custom {
+    border-top: 1px solid rgba(0, 0, 0, 1);   
+}
+
+

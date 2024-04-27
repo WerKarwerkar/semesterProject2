@@ -33,7 +33,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #293335;
-  --bs-secondary: #6c757d;
+  --bs-secondary: rgb(189, 214, 221);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -41,7 +41,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 41, 51, 53;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 189, 214, 221;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -1825,13 +1825,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #e2e3e5;
-  --bs-table-border-color: #cbccce;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #f2f7f8;
+  --bs-table-border-color: #dadedf;
+  --bs-table-striped-bg: #e6ebec;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #dadedf;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #e0e4e5;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2813,20 +2813,20 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-color: #000;
+  --bs-btn-bg: rgb(189, 214, 221);
+  --bs-btn-border-color: rgb(189, 214, 221);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #c7dce2;
+  --bs-btn-hover-border-color: #c4dae0;
+  --bs-btn-focus-shadow-rgb: 161, 182, 188;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #cadee4;
+  --bs-btn-active-border-color: #c4dae0;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: rgb(189, 214, 221);
+  --bs-btn-disabled-border-color: rgb(189, 214, 221);
 }
 
 .btn-success {
@@ -2949,19 +2949,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6c757d;
-  --bs-btn-hover-border-color: #6c757d;
-  --bs-btn-focus-shadow-rgb: 108, 117, 125;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6c757d;
-  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-color: rgb(189, 214, 221);
+  --bs-btn-border-color: rgb(189, 214, 221);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(189, 214, 221);
+  --bs-btn-hover-border-color: rgb(189, 214, 221);
+  --bs-btn-focus-shadow-rgb: 189, 214, 221;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(189, 214, 221);
+  --bs-btn-active-border-color: rgb(189, 214, 221);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-color: rgb(189, 214, 221);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-border-color: rgb(189, 214, 221);
   --bs-gradient: none;
 }
 
@@ -4616,12 +4616,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  --bs-alert-color: #41464b;
-  --bs-alert-bg: #e2e3e5;
-  --bs-alert-border-color: #d3d6d8;
+  --bs-alert-color: #4c5658;
+  --bs-alert-bg: #f2f7f8;
+  --bs-alert-border-color: #ebf3f5;
 }
 .alert-secondary .alert-link {
-  color: #34383c;
+  color: #3d4546;
 }
 
 .alert-success {
@@ -4985,17 +4985,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-secondary {
-  color: #41464b;
-  background-color: #e2e3e5;
+  color: #4c5658;
+  background-color: #f2f7f8;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #41464b;
-  background-color: #cbccce;
+  color: #4c5658;
+  background-color: #dadedf;
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #41464b;
-  border-color: #41464b;
+  background-color: #4c5658;
+  border-color: #4c5658;
 }
 
 .list-group-item-success {
@@ -6553,8 +6553,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
-  background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(189, 214, 221, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -6595,10 +6595,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #6c757d !important;
+  color: rgb(189, 214, 221) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
+  color: #cadee4 !important;
 }
 
 .link-success {
@@ -10711,113 +10711,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.bg-image {
-  background: url("/assets/img/expensive car 1.jpg") no-repeat center center;
-  background-size: cover; /* Zapewnia, że obraz tła pokryje całą dostępną przestrzeń */
-  min-height: 100vh; /* Zapewnia, że tło rozciąga się na minimum do wysokości widzialnej części okna przeglądarki */
+.bg-blue {
+  background-color: rgb(189, 214, 221);
 }
 
-.buttons .btn {
-  font-family: "Mplus 1p", sans-serif;
+.border-custom-color {
+  border-bottom: 2px solid rgb(189, 214, 221);
 }
 
 .custom-rounded {
   border-radius: 30px;
 }
 
-.sign-custom {
-  font-weight: bold;
-  text-decoration: none;
-  font-family: "Mplus 1p", sans-serif;
-}
-
-.form-inline {
-  max-width: 30%;
-  margin: auto;
-}
-
-.nosubmit {
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 13px center;
-}
-
-.navbar-brand {
+.user {
   font-family: "Michroma", sans-serif;
 }
 
-.nav-item .nav-link {
-  color: black;
-  font-family: "Mplus 1p", sans-serif;
+.hr-custom {
+  border-top: 1px solid rgb(0, 0, 0);
 }
 
-.subject {
-  font-family: "Michroma", sans-serif;
-  font-size: 32px;
-}
-
-.sign-custom1 {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(218, 144, 37);
-  text-decoration-thickness: 3px;
-}
-
-.custom-rounded2 {
-  border-radius: 8px;
-}
-
-.category-text h5, .category-text .h5, .category-text h6, .category-text .h6 {
-  font-family: "Mplus 1p", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.hover-overlay {
-  transition: filter 0.5s ease;
-}
-
-.hover-overlay:hover {
-  filter: brightness(70%);
-}
-
-.category-text {
-  transition: opacity 0.3s ease;
-}
-
-.category-text.hover-show {
-  opacity: 0;
-}
-
-.category-image:hover .category-text {
-  display: block !important;
-  opacity: 2;
-}
-
-.card-body h5, .card-body .h5, p, a {
-  font-family: "Mplus 1p", sans-serif;
-}
-
-.newsletter-bg {
-  background-color: rgb(196, 201, 198);
-}
-
-.newsletter-bg p {
-  font-family: "Michroma", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.social-links .bi {
-  color: rgb(255, 255, 255);
-}
-
-.footer-bg {
-  background-color: rgb(41, 51, 53);
-}
-.footer-bg h4, .footer-bg .h4 {
-  font-family: "Michroma", sans-serif;
-  color: rgb(255, 255, 255);
-}
-.footer-bg p {
-  font-family: "Mplus 1p", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=all-auctions.css.map */
