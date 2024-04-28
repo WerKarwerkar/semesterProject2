@@ -10713,8 +10713,8 @@ textarea.form-control-lg {
 }
 .bg-image {
   background: url("/assets/img/expensive car 1.jpg") no-repeat center center;
-  background-size: cover; /* Zapewnia, że obraz tła pokryje całą dostępną przestrzeń */
-  min-height: 100vh; /* Zapewnia, że tło rozciąga się na minimum do wysokości widzialnej części okna przeglądarki */
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .buttons .btn {

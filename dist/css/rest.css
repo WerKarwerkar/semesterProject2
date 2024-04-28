@@ -10731,4 +10731,9 @@ textarea.form-control-lg {
   border-top: 1px solid rgb(0, 0, 0);
 }
 
+.custom-hr2 {
+  margin: 0 auto;
+  width: 80%;
+}
+
 /*# sourceMappingURL=rest.css.map */
