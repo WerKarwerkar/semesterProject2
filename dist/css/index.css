@@ -10732,7 +10732,7 @@ textarea.form-control-lg {
 }
 
 .form-inline {
-  max-width: 30%;
+  width: 30%;
   margin: auto;
 }
 
