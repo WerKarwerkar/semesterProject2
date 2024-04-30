@@ -36,7 +36,8 @@
             <a class="nav-link fs-6" href="#">Buy</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="#">Sell</a>
+            <a class="nav-link fs-6" href="#" id="creatListing" onclick="createListingModal()">Sell</a>
+            <div class="createListing-display"></div>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link fs-6" href="#">Contact</a>
@@ -55,73 +56,74 @@
     <!-- Categories -->
     <section class="categories">
       <div class="container mt-5">
-        <div class="row">
-          <div class="col mb-3">
-            <h2 class="subject mb-3 fs-4">What are you</h2>
-            <h2 class="subject fs-4">looking for?</h2>
-            <a href="#" class="float-end custom-font sign-custom1 mb-3">view all</a>
+          <div class="row">
+              <div class="col mb-2">
+                  <h2 class="subject mb-2 fs-4">What are you</h2>
+                  <h2 class="subject mb-2 fs-4">looking for?</h2>
+                  <a href="#" class="float-end custom-font sign-custom1 mb-3">View all</a>
+              </div>
           </div>
-        </div>
-        <div class="row g-md-2">
-          <div class="col-6 mb-2 mb-md-2">
-            <div class="category-image position-relative">
-              <img src="./assets/img/shoes 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="shoes and bags">
-              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
-              <h5 class="fs-5">Accessorize</h5>
-              <h6 class="fs-6">Bags, shoes and more.</h4>
-              <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+          <div class="row g-md-2">
+              <div class="col-md-6 mb-2">
+                  <div class="category-image position-relative">
+                      <img src="./assets/img/shoes 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="shoes and bags">
+                      <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                          <h5 class="fs-5">Accessorize</h5>
+                          <h6 class="fs-6">Bags, shoes and more</h6>
+                          <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-md-6">
+                  <div class="row g-md-2">
+                      <div class="col-6 mb-2">
+                          <div class="category-image position-relative">
+                              <img src="./assets/img/carrera 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera watch">
+                              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                                  <h5 class="fs-5">Jewellery</h5>
+                                  <h6 class="fs-6">Watches, rings and more</h6>
+                                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6 mb-2">
+                          <div class="category-image position-relative">
+                              <img src="./assets/img/carrera 2 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera car">
+                              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                                  <h5 class="fs-5">Cars</h5>
+                                  <h6 class="fs-6">Sport, oldtimers and more</h6>
+                                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row g-md-2">
+                      <div class="col-6 mb-2">
+                          <div class="category-image position-relative">
+                              <img src="./assets/img/mona lisa 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="mona lisa graffiti">
+                              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                                  <h5 class="fs-5">Art and Furnitures</h5>
+                                  <h6 class="fs-6">Paintings, furnitures and more</h6>
+                                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6 mb-2">
+                          <div class="category-image position-relative">
+                              <img src="./assets/img/malibu 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="view of a house in Malibu">
+                              <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
+                                  <h5 class="fs-5">Properties</h5>
+                                  <h6 class="fs-6">Houses, yachts and more</h6>
+                                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        
-          <div class="col-6">
-            <div class="row g-md-2">
-              <div class="col-6 mb-2 mb-md-2">
-                <div class="category-image position-relative">
-                <img src="./assets/img/carrera 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera watch">
-                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
-                <h5 class="fs-5">Jewellery</h5>
-                <h6 class="fs-6">Watches, rings...</h6>
-                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
-              </div>
-            </div>
-            </div>
-            
-            <div class="col-6 mb-2">
-              <div class="category-image position-relative">
-                <img src="./assets/img/carrera 2 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="carrera car">
-                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
-                <h5>Cars</h3>
-                <h6>Sport, oldtimers..</h4>
-                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
-              </div>
-            </div>
-            </div>
-            <div class="row g-md-2">
-              <div class="col-6 mb-2 mb-md-2">
-                <div class="category-image position-relative">
-                <img src="./assets/img/mona lisa 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="mona lisa grafitti">
-                <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
-                <h5>Art and furnitures</h3>
-                <h6>Paintings, furnitures...</h4>
-                <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
-              </div>
-              </div>
-              </div>
-              <div class="col-6 mb-2 mb-md-2">
-                <div class="category-image position-relative">
-
-                  <img src="./assets/img/malibu 1.jpg" class="img-fluid custom-rounded2 hover-overlay" alt="view for the house in malibu">
-                  <div class="category-text position-absolute top-50 start-50 translate-middle d-none hover-show">
-                  <h5>Properties</h3>
-                  <h6>Houses, yachts...</h4>
-                  <a href="#" class="btn btn-primary custom-rounded pe-5 ps-5">Explore</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
+  
 
         <!-- Delivery images -->
         <section class="delivery">

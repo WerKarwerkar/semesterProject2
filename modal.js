@@ -88,6 +88,90 @@ const signinModal = `
 `;
 
 
+
+
+
+
+const creatListing = `
+<div class="modal fade" id="createListingModal" tabindex="-1" aria-labelledby="createListingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg"> <!-- Larger modal for more content -->
+    <div class="modal-content">
+      <div class="modal-header position-relative mb-3">
+        <h5 class="modal-title w-100 text-center position-absolute mt-3" id="createListingModalLabel">Create Listing</h5>
+        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" style="right: 15px;"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6"> <!-- Left column for text inputs -->
+            <form>
+              <div class="mb-3">
+                <label for="listingTitle" class="form-label">Title</label>
+                <input type="text" class="form-control" id="listingTitle" placeholder="Enter the title">
+              </div>
+              <div class="mb-3">
+                <label for="listingDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="listingDescription" placeholder="Describe your product"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="listingImage" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="listingImage" placeholder="Add image url">
+              </div>
+              <div class="mb-3">
+                <label for="basePrice" class="form-label">Base Price</label>
+                <input type="text" class="form-control" id="basePrice" placeholder="Price the product">
+              </div>
+              <div class="mb-3">
+                <label for="bidValue" class="form-label">Bid Value</label>
+                <input type="text" class="form-control" id="bidValue" placeholder="Enter next bid price">
+              </div>
+              <div class="mb-3">
+                <label for="listingTags" class="form-label">Tags</label>
+                <input type="text" class="form-control" id="listingTags" placeholder="Tags (use comma to separate)">
+              </div>
+              <div class="mb-3">
+                <label for="dueDate" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="dueDate">
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="acceptTerms">
+                <label class="form-check-label" for="acceptTerms">Accept terms and conditions of AlleBids</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Create a Listing</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6"> 
+            <div class="product-details">
+              <img src="" alt="Product Image" class="img-fluid mb-3" id="productImage">
+              <h6 class="text-muted">Current bid: <span id="currentBid">1800 credits</span></h6>
+              <h6 class="text-muted">Next bid: <span id="nextBid">2000 credits</span></h6>
+              <p id="productDescription">A gold bar is a heavy, pure metal symbol of wealth, its value verified by its smooth surface's marked weight and fineness.</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary">Bid Now</button>
+              </div>
+              <p class="text-muted"><small>Due date: <span id="listingDueDate">23.04.2024</span></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+
 function loginmodal() {
     document.querySelector('.login-display').innerHTML = loginModal;
     var myModal = new bootstrap.Modal(document.getElementById('loginModal'), {});
@@ -100,5 +184,12 @@ function loginmodal() {
 function signinmodal() {    
     document.querySelector('.signin-display').innerHTML = signinModal;
     var myModal = new bootstrap.Modal(document.getElementById('signinModal'), {});
+    myModal.show();
+}
+
+
+function createListingModal() {    
+    document.querySelector('.createListing-display').innerHTML = creatListing;
+    var myModal = new bootstrap.Modal(document.getElementById('createListingModal'), {});
     myModal.show();
 }
