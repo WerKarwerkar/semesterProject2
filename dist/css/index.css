@@ -10804,6 +10804,10 @@ textarea.form-control-lg {
   color: rgb(255, 255, 255);
 }
 
+.form-width {
+  max-width: 300px;
+}
+
 .social-links .bi {
   color: rgb(255, 255, 255);
 }

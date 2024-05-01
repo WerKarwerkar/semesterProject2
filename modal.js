@@ -74,8 +74,8 @@ const signinModal = `
          <input type="text" class="form-control" id="avatarUrl" placeholder="Enter the URL of your avatar">
          </div>
           <div class="mb-3">
-            <label for="bannerinload" class="form-label">Banner</label>
-            <input type="file" class="form-control" id="bannerinload" accept="image/*">
+            <label for="bannerUrl" class="form-label">Banner</label>
+            <input type="text" class="form-control" id="bannerUrl" placeholder="Enter your banner">
           </div>
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Sign Up</button>
@@ -94,7 +94,7 @@ const signinModal = `
 
 const creatListing = `
 <div class="modal fade" id="createListingModal" tabindex="-1" aria-labelledby="createListingModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg"> <!-- Larger modal for more content -->
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header position-relative mb-3">
         <h5 class="modal-title w-100 text-center position-absolute mt-3" id="createListingModalLabel">Create Listing</h5>
@@ -102,7 +102,7 @@ const creatListing = `
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-6"> <!-- Left column for text inputs -->
+          <div class="col-md-6">
             <form>
               <div class="mb-3">
                 <label for="listingTitle" class="form-label">Title</label>
@@ -141,25 +141,47 @@ const creatListing = `
               </div>
             </form>
           </div>
-          <div class="col-md-6"> 
-            <div class="product-details">
-              <img src="" alt="Product Image" class="img-fluid mb-3" id="productImage">
-              <h6 class="text-muted">Current bid: <span id="currentBid">1800 credits</span></h6>
-              <h6 class="text-muted">Next bid: <span id="nextBid">2000 credits</span></h6>
-              <p id="productDescription">A gold bar is a heavy, pure metal symbol of wealth, its value verified by its smooth surface's marked weight and fineness.</p>
-              <div class="d-grid gap-2">
-                <button class="btn btn-primary">Bid Now</button>
+          <div class="col-md-6">
+            <img src="" alt="Product Image" class="img-fluid mb-3" id="productImage">
+            <div class="row mb-2">
+              <div class="col-6">
+                <h6 class="text-muted">Current bid:</h6>
               </div>
-              <p class="text-muted"><small>Due date: <span id="listingDueDate">23.04.2024</span></small></p>
+              <div class="col-6 text-end">
+                <h6 class="text-muted"><span id="currentBid">1800 credits</span></h6>
+              </div>
             </div>
+            <div class="row mb-2">
+              <div class="col-6">
+                <h6 class="text-muted">Next bid:</h6>
+              </div>
+              <div class="col-6 text-end">
+                <h6 class="text-muted"><span id="nextBid">2000 credits</span></h6>
+              </div>
+            </div>
+            <h5 class="fs-5">Description</h5>
+            <p class="fs-6" id="productDescription">Description text</p>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary">Bid Now</button>
+            </div>
+            <p class="text-muted"><small>Due date: <span id="listingDueDate"></span></small></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+       
+
 `;
 
+
+{/* <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-6 text-start">
+                                <h5 >Current bid</h5>
+                                <h5 class="text-muted">Next bid</h5>
+                              </div>
+                              <div class="col-6 text-end">
+                                <h5>1800 credit</h5>
+                                <h5 class="text-muted">2000 credit</h5>
+                              </div>
+                            </div> */}
 
 
 

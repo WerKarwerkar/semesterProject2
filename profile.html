@@ -39,7 +39,8 @@
             <a class="nav-link fs-6" href="#">Buy</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="#">Sell</a>
+            <a class="nav-link fs-6" href="#" id="creatListing" onclick="createListingModal()">Sell</a>
+            <div class="createListing-display"></div>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link fs-6" href="#">Contact</a>
@@ -234,17 +235,15 @@
 
 
 <!-- Newsletter -->
-<section class="newsletter">
-<div class="container-fluid newsletter-bg text-center p-5 ">
-    <p class="fs-6 custom-font mb-4">Sign up for our NEWSLETTER</p>
-    <div class="row">
-            <div class="form-inline d-flex justify-content-center align-items-center">
-                <input class="form-control custom-rounded" type="search" placeholder="email adress" aria-label="Search">
-                <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Join AlleBids</a>
-            </div>
-        </div>
+<section class="newsletter newsletter-bg text-white text-center py-5">
+    <div class="container">
+      <p class="mb-4 fs-5 custom-font">Sign up for our NEWSLETTER</p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control custom-rounded form-width" placeholder="email address">
+        <button type="submit" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Join AlleBids</button>
+      </form>
     </div>
-</section>
+  </section>
 
 
 
