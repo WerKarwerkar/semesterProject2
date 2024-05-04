@@ -96,7 +96,7 @@ const creatListing = `
 <div class="modal fade" id="createListingModal" tabindex="-1" aria-labelledby="createListingModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header position-relative mb-3">
+      <div class="modal-header position-relative mb-3" style:"border-bottom: none !important;">
         <h5 class="modal-title w-100 text-center position-absolute mt-3" id="createListingModalLabel">Create Listing</h5>
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" style="right: 15px;"></button>
       </div>
@@ -169,20 +169,6 @@ const creatListing = `
        
 
 `;
-
-
-{/* <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-6 text-start">
-                                <h5 >Current bid</h5>
-                                <h5 class="text-muted">Next bid</h5>
-                              </div>
-                              <div class="col-6 text-end">
-                                <h5>1800 credit</h5>
-                                <h5 class="text-muted">2000 credit</h5>
-                              </div>
-                            </div> */}
-
 
 
 

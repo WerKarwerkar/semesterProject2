@@ -10736,4 +10736,8 @@ textarea.form-control-lg {
   width: 80%;
 }
 
+#createListingModal .modal-header {
+  border-bottom: none !important;
+}
+
 /*# sourceMappingURL=rest.css.map */
