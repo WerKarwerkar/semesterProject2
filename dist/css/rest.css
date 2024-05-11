@@ -10719,10 +10719,6 @@ textarea.form-control-lg {
   border-bottom: 2px solid rgb(189, 214, 221);
 }
 
-.custom-rounded {
-  border-radius: 30px;
-}
-
 .user {
   font-family: "Michroma", sans-serif;
 }
@@ -10738,6 +10734,10 @@ textarea.form-control-lg {
 
 #createListingModal .modal-header {
   border-bottom: none !important;
+}
+
+.custom-rounded {
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=rest.css.map */
