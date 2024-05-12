@@ -14,12 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js" defer ></script>
     <!-- modules -->
-    <script src="./src/js/constants.mjs" defer type="module"></script>
-    <script src="./src/js/listener/register.mjs" defer type="module"></script>
-    <script src="./src/js/listener/login.mjs" defer type="module"></script> 
-    <script src="modal.js" defer type="module"></script>
+    <script type="module" src="./src/js/constants.mjs" defer></script>
+    <script type="module" src="./src/js/listener/register.mjs" defer></script>
+    <script type="module" src="./src/js/listener/login.mjs" defer></script>
+ 
+    <script type="module" src="./src/js/api/auth/logout.mjs"></script>
+    <script type="module" src="./src/js/api/auth/login.mjs"defer></script>
+ 
     <script src="./src/js/index.js"></script>
+    <script src="modal.js" ></script>
   
+    
 </head>
 
 <body>
@@ -27,9 +32,9 @@
     <div class="container-fluid bg-image">
       <!-- Sign Up and Log in buttons -->
       <div class="d-flex justify-content-end">
-        <button class="btn btn-link mt-5 sign-custom" onclick="signinmodal()">Sign Up</button>
+        <button class="btn btn-link mt-5 sign-custom przyciskkk2" onclick="signinmodal()">Sign Up</button>
         <div class="signin-display"></div>
-        <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4" onclick="loginmodal()">Log in</button>
+        <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4 przyciskkk" onclick="loginmodal()">Log in</button>
         <div class="login-display"></div>
       </div>
       <!-- Logo -->
@@ -259,6 +264,4 @@
         </div>
     </footer>
 </body>
-<script src="modal.js"></script>
-
 </html>

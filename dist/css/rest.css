@@ -10740,4 +10740,10 @@ textarea.form-control-lg {
   border-radius: 30px;
 }
 
+.sign-custom {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Mplus 1p", sans-serif;
+}
+
 /*# sourceMappingURL=rest.css.map */

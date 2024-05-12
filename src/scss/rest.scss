@@ -47,3 +47,8 @@ $custom-font: 'Mplus 1p', sans-serif;
 .custom-rounded {
     border-radius: 30px;
 }
+.sign-custom {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: $custom-font;
+  }

@@ -3,26 +3,26 @@ import { setStorage, getStorage } from "../../storage.js";
 
 var logged = false;
 
-export async function checkLogState() {
-    console.log(logged);
+window.checkLogState = async function() {
+    // console.log(logged);
    
     const storage_token = getStorage("accesToken");
     const storage_profile = getStorage("profile");
-    console.log(storage_profile, storage_token);
+    // console.log(storage_profile, storage_token);
     
     if (!storage_profile || !storage_token) return false;
 
-    console.log("ew");
+    // console.log("ew");
     
     try {
-        const loginResponse = await login(JSON.parse(storage_profile), false);
-        console.log(loginResponse)
+        const loginResponse = await login(JSON.parse(storage_profile), true);
+        // console.log(loginResponse)
         if (loginResponse === true) {
             logged = true;
-            console.log("zalogowane");
+            // console.log("zalogowane");
             return true;
         } else {
-            console.log(loginResponse)
+            // console.log(loginResponse)
             return false;
         } 
     } catch (error) {
@@ -36,8 +36,8 @@ export async function checkLogState() {
 export default async function login(profile, auto) {
     
     if(logged === true){
-        console.log("zalogowany")
-        return;
+        // console.log("zalogowany")
+        return true;
     }
     const reg_message_display = document.querySelector('#log-in-form #reg-message');
     var reg_message = ""
@@ -55,7 +55,7 @@ export default async function login(profile, auto) {
             const responseData = await fetchResponse.json();
             const accesToken= responseData.data.accessToken
             logged = true
-            console.log("ustanwowiaon logowanie")
+            // console.log("ustanwowiaon logowanie")
             setStorage("accesToken", accesToken, 1);
             setStorage("profile", JSON.stringify(profile), 1);
             
@@ -80,17 +80,16 @@ export default async function login(profile, auto) {
     
     function ShowMessage(error, message, location){
         if(error){
-            console.error(message);
+            // console.error(message);
             if(!auto)reg_message_display.innerHTML = message
         }else{
-            console.log(message);
-            if(!auto)reg_message_display.innerHTML = message
-            setTimeout(() => {
-                window.location.reload()
-            }, 1000);
+            // console.log(message);
+            if(!auto){
+                reg_message_display.innerHTML = message
+                setTimeout(() => {
+                    window.location.reload()
+                }, 1000);
+            }
         }
     }
 }
-
-
-checkLogState().then(result => console.log(result));
