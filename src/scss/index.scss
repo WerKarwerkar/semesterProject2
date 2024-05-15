@@ -74,9 +74,16 @@ $custom-font: 'Mplus 1p', sans-serif;
     text-decoration-thickness: 3px;
   }
 
-  .custom-rounded2 {
-    border-radius: 8px;
-}
+.img-fluid {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover; // or contain then it doesnt cut but some pictures are smaller
+  }
+  
+  .custom-rounded-bottom {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+  }
 
 .category-text {
     h5, h6 {

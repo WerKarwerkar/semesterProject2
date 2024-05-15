@@ -10719,6 +10719,10 @@ textarea.form-control-lg {
   border-bottom: 2px solid rgb(189, 214, 221);
 }
 
+.extrainfo .titlecustom {
+  font-family: "Mplus 1p", sans-serif;
+}
+
 .user {
   font-family: "Michroma", sans-serif;
 }

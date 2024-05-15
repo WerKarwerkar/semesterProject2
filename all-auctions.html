@@ -25,323 +25,167 @@
  
     <script src="./src/js/index.js"></script>
     <script src="modal.js" defer></script>
+  <script type="module" src="./src/js/auctions/getauctions.mjs"></script>
 
-  
-</head>
 </head>
 <body>
-  <header>
-    <div class="container-fluid bg-blue">
-      <!-- Sign Up and Log in buttons -->
-      <div class="d-flex justify-content-end">
-        <button class="btn btn-link mt-5 sign-custom" onclick="signinmodal()">Sign Up</button>
-        <div class="signin-display"></div>
-        <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4" onclick="loginmodal()">Log in</button>
-        <div class="login-display"></div>
-        </div>
-      <!-- Logo -->
-      <div class="mt-3 mb-3 text-center">
-        <a class="navbar-brand fs-1" href="index.html">AlleBids</a>
+<header>
+  <div class="container-fluid bg-blue">
+    <!-- Sign Up and Log in buttons -->
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-link mt-5 sign-custom przyciskkk2" onclick="signinmodal()">Sign Up</button>
+      <div class="signin-display"></div>
+      <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4 przyciskkk" onclick="loginmodal()">Log in</button>
+      <div class="login-display"></div>
       </div>
+    <!-- Logo -->
+    <div class="mt-3 mb-3 text-center">
+      <a class="navbar-brand fs-1" href="/index.html">AlleBids</a>
     </div>
+  </div>
 
-      <!-- Navigation Bar -->
-      <div class="nav justify-content-center mb-4 border-custom-color">
-        <ul class="nav">
-          <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="all-auctions.html">Buy</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="#" id="creatListing" onclick="createListingModal()">Sell</a>
-            <div class="createListing-display"></div>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="#" onclick="ScrollToBottom()">Contact</a>
-          </li>
-        </ul>
-      </div>  
-    </div>
-
-
-
-
-
-      <!-- Search Form and filter-->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center px-5">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  SORT LISTING
-                </button>
-                <ul class="dropdown-menu bg-secondary">
-                    <li><a class="dropdown-item" href="#">LAST CHANCE</a></li>
-                    <li><a class="dropdown-item" href="#">JUST STARTED</a></li>
-                </ul>
-            </div>
-        </div>
-          <div class="col form-inline d-flex justify-content-center align-items-center">
-                    <input class="form-control custom-rounded nosubmit" type="search" placeholder="Search..." aria-label="Search">
-            </div>
-        </div>
-    </div>
-
-
-  </header>
+    <!-- Navigation Bar -->
+    <div class="nav justify-content-center mb-4 border-custom-color">
+      <ul class="nav">
+        <li class="nav-item px-3">
+          <a class="nav-link fs-6" href="/all-auctions.html">Buy</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link fs-6" href="#" id="creatListing" onclick="createListingModal()">Sell</a>
+          <div class="createListing-display"></div>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link fs-6" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>  
   
-  <!-- Main Content -->   
-  <main>
+
+
+
+
+
+    <!-- Search Form and filter-->
     <div class="container-fluid">
-        <div class="container mt-5">
-            <div class="row">
-              <div class="col mb-3">
-                <h2 class="subject mb-5 fs-4">All Auctions</h2>
-              </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center px-5 mb-5">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SORT LISTING
+              </button>
+              <ul class="dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item" href="#">LAST CHANCE</a></li>
+                  <li><a class="dropdown-item" href="#">JUST STARTED</a></li>
+              </ul>
+          </div>
+      </div>
+        <div class="col form-inline d-flex justify-content-center align-items-center">
+                  <input class="form-control custom-rounded nosubmit" type="search" placeholder="Search..." aria-label="Search">
+          </div>
+      </div>
+  </div>
+
+
+</header>
+
+<!-- Main Content -->   
+<main>
+  <div class="container-fluid" id="all-auctions-constainer">
+      <div class="container mt-5">
+          <div class="row">
+            <div class="col mb-3">
+              <h2 class="subject fs-4">All Auctions</h2>
             </div>
+        </div>
+      </div>
+  </div>  
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col">
             <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col-md-4 mb-5">
-                          <div class="">
-                            <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
-                            <div class="card-body">
-                              <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                              <p class="card-text mb-0">Current bid: 5 credits</p>
-                              <p class="card-text">Seller: Rusty3erf</p>
-                              <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-
-                
-                        <div class="col-md-4 mb-5">
-                            <div class="">
-                                <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
-                                <div class="card-body">
-                                <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                <p class="card-text mb-0">Current bid: 5 credits</p>
-                                <p class="card-text">Seller: Rusty3erf</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4 mb-5">
-                            <div class="">
-                              <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
-                              <div class="card-body">
-                                <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                <p class="card-text mb-0">Current bid: 5 credits</p>
-                                <p class="card-text">Seller: Rusty3erf</p>
-                                <div class="d-flex justify-content-center">
-                                <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-            </div>
-
-
-            <div class="container-fluid mt-5">
-                  <div class="row">
-                      <div class="col">
-                          <div class="row">
-                              <div class="col-md-4 mb-5">
-                                <div class="">
-                                  <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                    <p class="card-text mb-0">Current bid: 5 credits</p>
-                                    <p class="card-text">Seller: Rusty3erf</p>
-                                    <div class="d-flex justify-content-center">
-                                      <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
-                                  </div>
-                                  </div>
-                                </div>
-                              </div>
-      
-                      
-                              <div class="col-md-4 mb-5">
-                                  <div class="">
-                                      <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
-                                      <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                      <p class="card-text mb-0">Current bid: 5 credits</p>
-                                      <p class="card-text">Seller: Rusty3erf</p>
-                                      <div class="d-flex justify-content-center">
-                                          <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-      
-                                <div class="col-md-4 mb-5">
-                                  <div class="">
-                                    <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
-                                    <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                      <p class="card-text mb-0">Current bid: 5 credits</p>
-                                      <p class="card-text">Seller: Rusty3erf</p>
-                                      <div class="d-flex justify-content-center">
-                                      <div class="d-flex justify-content-center">
-                                      <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                <div class="col-md-4 mb-5">
+                  <div class="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img img-fluid custom-rounded-bottom" alt="Auction Without Image">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4 mb-2">Loading...</h5>
+                      <div class="d-flex justify-content-center">
+                        <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
+                      </div>
+                    </div>
                   </div>
-      
+                </div>
+                <div class="col-md-4 mb-5">
+                  <div class="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img img-fluid custom-rounded-bottom" alt="Auction Without Image">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4 mb-2 titlecustom">Loading...</h5>
+                      <div class="d-flex justify-content-center">
+                        <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                  <div class="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img img-fluid custom-rounded-bottom" alt="Auction Without Image">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4 mb-2">Loading...</h5>
+                      <div class="d-flex justify-content-center">
+                        <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            
+</main>
 
-                  <div class="container-fluid mt-5">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-md-4 mb-5">
-                                      <div class="">
-                                        <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
-                                        <div class="card-body">
-                                          <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                          <p class="card-text mb-0">Current bid: 5 credits</p>
-                                          <p class="card-text">Seller: Rusty3erf</p>
-                                          <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
-                                        </div>
-                                        </div>
-                                      </div>
-                                    </div>
+
+           <!-- Newsletter -->
+           <section class="newsletter newsletter-bg text-white text-center py-5">
+            <div class="container">
+              <p class="mb-4 fs-5 custom-font">Sign up for our NEWSLETTER</p>
+              <form class="d-flex justify-content-center">
+                <input type="email" class="form-control custom-rounded form-width" placeholder="email address">
+                <button type="submit" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Join AlleBids</button>
+              </form>
+            </div>
+          </section>
+
+         
+         
+         
+         
+         
+         
+             
+             
+         
+             <!-- Footer -->
+             <footer class="footer-bg">
+                 <div class="container text-center">
+                     <div class="row">
+                         <div class="col-lg-12">
+                             <h4 class="logo1 mt-3 mb-3">AlleBids</h4>
+                             <p class="fs-6">Address: 1234 Street, San Diego, California</p>
+                             <p class="fs-6">contact@allebids.com</p>
+                             <p class="fs-6">+1 0123 456 789</p>
+             
+                             <div class="social-links">
+                             <a href="https://www.instagram.com"><i class="bi bi-instagram px-2"></i></a>        
+                             <a href="https://www.facebook.com"><i class="bi bi-facebook px-2"></i></a>
+                             <a href="https://twitter.com"><i class="bi bi-twitter px-2"></i></a>
+                             </div>
+                             <p class="mt-3 custom-font mb-2">Copyright © 2024 AlleBids, All rights reserved.</p>
+                         </div>
+                     </div>
+                 </div>
+             </footer>
+             
             
-                            
-                                    <div class="col-md-4 mb-5">
-                                        <div class="">
-                                            <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
-                                            <div class="card-body">
-                                            <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                            <p class="card-text mb-0">Current bid: 5 credits</p>
-                                            <p class="card-text">Seller: Rusty3erf</p>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-            
-                                      <div class="col-md-4 mb-5">
-                                        <div class="">
-                                          <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
-                                          <div class="card-body">
-                                            <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                            <p class="card-text mb-0">Current bid: 5 credits</p>
-                                            <p class="card-text">Seller: Rusty3erf</p>
-                                            <div class="d-flex justify-content-center">
-                                            <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                        </div>
-                      
-            
-                        <div class="container-fluid mt-5 mb-5">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="row">
-                                          <div class="col-md-4 mb-5">
-                                            <div class="">
-                                              <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
-                                              <div class="card-body">
-                                                <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                                <p class="card-text mb-0">Current bid: 5 credits</p>
-                                                <p class="card-text">Seller: Rusty3erf</p>
-                                                <div class="d-flex justify-content-center">
-                                                  <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
-                                              </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                  
-                                  
-                                          <div class="col-md-4 mb-5">
-                                              <div class="">
-                                                  <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
-                                                  <div class="card-body">
-                                                  <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                                  <p class="card-text mb-0">Current bid: 5 credits</p>
-                                                  <p class="card-text">Seller: Rusty3erf</p>
-                                                  <div class="d-flex justify-content-center">
-                                                      <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                  
-                                            <div class="col-md-4 mb-5">
-                                              <div class="">
-                                                <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
-                                                <div class="card-body">
-                                                  <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                                  <p class="card-text mb-0">Current bid: 5 credits</p>
-                                                  <p class="card-text">Seller: Rusty3erf</p>
-                                                  <div class="d-flex justify-content-center">
-                                                  <div class="d-flex justify-content-center">
-                                                  <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                            </div>
+         
 
-                  
-                            </main>
-
-
-             <!-- Newsletter -->
-             <section class="newsletter newsletter-bg text-white text-center py-5">
-              <div class="container">
-                <p class="mb-4 fs-5 custom-font">Sign up for our NEWSLETTER</p>
-                <form class="d-flex justify-content-center">
-                  <input type="email" class="form-control custom-rounded form-width" placeholder="email address">
-                  <button type="submit" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Join AlleBids</button>
-                </form>
-              </div>
-            </section>
-  
-           
-           
-           
-           
-           
-           
-               
-               
-           
-               <!-- Footer -->
-               <footer class="footer-bg">
-                   <div class="container text-center">
-                       <div class="row">
-                           <div class="col-lg-12">
-                               <h4 class="logo1 mt-3 mb-3">AlleBids</h4>
-                               <p class="fs-6">Address: 1234 Street, San Diego, California</p>
-                               <p class="fs-6">contact@allebids.com</p>
-                               <p class="fs-6">+1 0123 456 789</p>
-               
-                               <div class="social-links">
-                               <a href="https://www.instagram.com"><i class="bi bi-instagram px-2"></i></a>        
-                               <a href="https://www.facebook.com"><i class="bi bi-facebook px-2"></i></a>
-                               <a href="https://twitter.com"><i class="bi bi-twitter px-2"></i></a>
-                               </div>
-                               <p class="mt-3 custom-font mb-2">Copyright © 2024 AlleBids, All rights reserved.</p>
-                           </div>
-                       </div>
-                   </div>
-               </footer>
-           </body>
-
-           </html>
-  
+         
+</body></html>

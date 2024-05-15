@@ -6,6 +6,8 @@ export const API_AUTH = '/auth';
 export const API_REGISTER = API_BASE+API_AUTH+'/register';
 export const API_LOGIN = API_BASE+API_AUTH+'/login';
 export const API_KEY = 'create-api-key';
+export const API_ALLAUCTIONS = API_BASE+"/auction/listings/"
+
 
 
 //INPUTS
