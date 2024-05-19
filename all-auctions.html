@@ -20,15 +20,15 @@
     <script type="module" src="./src/js/constants.mjs" defer></script>
     <script type="module" src="./src/js/listener/register.mjs" defer></script>
     <script type="module" src="./src/js/listener/login.mjs" defer></script>
-    <script type="module" src="./src/js/auctions/createlisting.mjs" defer></script>
-    <script type="module" src="./src/js/listener/createlisting.mjs" defer></script>
+    <script type="module" src="./src/js/auctions/createListing.mjs" defer></script>
+    <script type="module" src="./src/js/listener/createListing.mjs" defer></script>
     
     <script type="module" src="./src/js/api/auth/logout.mjs"></script>
 
     <script src="./src/js/index.js"></script>
     <script src="modal.js" defer></script>
     
-    <script type="module" src="./src/js/auctions/getauctions.mjs"></script>
+    <script type="module" src="./src/js/auctions/getAuctions.mjs"></script>
 
 </head>
 <body>
@@ -68,25 +68,13 @@
 
 
 
-      <!-- Search Form and filter-->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center px-5">
-            <div class="dropdown">
-                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  SORT LISTING
-                </button> -->
-                <!-- <ul class="dropdown-menu bg-secondary">
-                    <li><a class="dropdown-item" href="#">LAST CHANCE</a></li>
-                    <li><a class="dropdown-item" href="#">JUST STARTED</a></li>
-                </ul> -->
-            </div>
-        </div>
+      <!-- Search Form-->
+      <div class="container">
+       
           <div class="col form-inline d-flex justify-content-center align-items-center">
             <input id="search-input" oninput="search()" class="form-control custom-rounded nosubmit" type="search" placeholder="Search..." aria-label="Search">
           </div>
         </div>
-    </div>
 
 
   </header>
@@ -108,7 +96,7 @@
               <div class="row">
                   <div class="col-md-4 mb-5">
                     <div class="">
-                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
+                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded-top img-fluid fluido" alt="Auction Without Image">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-2">Loading...</h5>
                         <div class="d-flex justify-content-center">
@@ -119,7 +107,7 @@
                   </div>
                   <div class="col-md-4 mb-5">
                     <div class="">
-                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
+                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded-top img-fluid fluido" alt="Auction Without Image">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-2">Loading...</h5>
                         <div class="d-flex justify-content-center">
@@ -130,7 +118,7 @@
                   </div>
                   <div class="col-md-4 mb-5">
                     <div class="">
-                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
+                      <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded-top img-fluid fluido" alt="Auction Without Image">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-2">Loading...</h5>
                         <div class="d-flex justify-content-center">

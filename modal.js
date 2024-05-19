@@ -96,48 +96,48 @@ const signinModal = `
 
 const creatListing = `
 <div class="modal fade" id="createListingModal" tabindex="-1" aria-labelledby="createListingModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header position-relative mb-3 border-bottom-0">
         <h5 class="modal-title w-100 text-center position-absolute mt-3" id="createListingModalLabel">Create Listing</h5>
         <button type="button" class="btn-close position-absolute" data-dismiss="modal" aria-label="Close" style="right: 15px;"></button>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <form id="create-listing">
-              <div class="mb-3">
-                <label for="listingTitle" class="form-label">Title</label>
-                <input type="text" name="title" class="form-control" id="listingTitle" placeholder="Enter the title" >
-              </div>
-              <div class="mb-3">
-                <label for="listingDescription" class="form-label">Description</label>
-                <textarea class="form-control" name="description" id="listingDescription" placeholder="Describe your product" ></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="listingImage" class="form-label">Image URL</label>
-                <input type="text" name="url" class="form-control" id="listingImage" placeholder="Add image url (use comma to separate)" >
-              </div>
-              <div class="mb-3">
-                <label for="listingTags" class="form-label">Tags</label>
-                <input type="text" name="tags" class="form-control" id="listingTags" placeholder="Tags (use comma to separate)" >
-              </div>
-              <div class="mb-3">
-                <label for="dueDate" class="form-label">Due Date</label>
-                <input type="date" name="endsAt" class="form-control" id="dueDate">
-              </div>
-              <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary">Create a Listing</button>
-              </div>
-              <div class="d-grid gap-2">
-                <h3 id="reg-message"></h3>
-              </div>
-            </form>
+        <form id="create-listing">
+          <div class="mb-3">
+            <label for="listingTitle" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="listingTitle" placeholder="Enter the title">
           </div>
-         
-       
-
+          <div class="mb-3">
+            <label for="listingDescription" class="form-label">Description</label>
+            <textarea class="form-control" name="description" id="listingDescription" placeholder="Describe your product"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="listingImage" class="form-label">Image URL</label>
+            <input type="text" name="url" class="form-control" id="listingImage" placeholder="Add image url (use comma to separate)">
+          </div>
+          <div class="mb-3">
+            <label for="listingTags" class="form-label">Tags</label>
+            <input type="text" name="tags" class="form-control" id="listingTags" placeholder="Tags (use comma to separate)">
+          </div>
+          <div class="mb-3">
+            <label for="dueDate" class="form-label">Due Date</label>
+            <input type="date" name="endsAt" class="form-control" id="dueDate">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Create a Listing</button>
+          </div>
+          <div class="d-grid gap-2">
+            <h3 id="reg-message"></h3>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 `;
+
+
 
 
 function loginmodal() {
