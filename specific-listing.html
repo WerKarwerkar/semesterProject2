@@ -2,43 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlleBids</title>
-  <meta name="description" content="AlleBids is an auction platform for buying and selling goods and services by bidding on items.">
-  <link rel="stylesheet" href="./dist/css/index.css">
-  <link rel="stylesheet" href="./dist/css/rest.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlleBids</title>
+    <meta name="description" content="AlleBids is an auction platform for buying and selling goods and services by bidding on items.">
+    <link rel="stylesheet" href="./dist/css/index.css">
+    <link rel="stylesheet" href="./dist/css/rest.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js" defer ></script>
-  <!-- modules -->
-  <script type="module" src="./src/js/constants.mjs" defer></script>
+
+    <script type="module" src="./src/js/constants.mjs" defer></script>
     <script type="module" src="./src/js/listener/register.mjs" defer></script>
     <script type="module" src="./src/js/listener/login.mjs" defer></script>
- 
+    <script type="module" src="./src/js/auctions/createlisting.mjs" defer></script>
+    <script type="module" src="./src/js/listener/createlisting.mjs" defer></script>
+
+    
     <script type="module" src="./src/js/api/auth/logout.mjs"></script>
-    <script type="module" src="./src/js/api/auth/login.mjs"defer></script>
- 
+
     <script src="./src/js/index.js"></script>
     <script src="modal.js" defer></script>
-</head>
+    
+    <script type="module" src="./src/js/auctions/getspecificauction.mjs"></script>
+    <script type="module" src="./src/js/auctions/getauctions.mjs"></script>
+    <!-- <script type="module" src="./src/js/auctions/bid.mjs"></script> -->
+  
+
 </head>
 <body>
   <header>
     <div class="container-fluid bg-blue">
       <!-- Sign Up and Log in buttons -->
       <div class="d-flex justify-content-end">
-        <button class="btn btn-link mt-5 sign-custom" onclick="signinmodal()">Sign Up</button>
+        <button class="btn btn-link mt-5 sign-custom przyciskkk2" onclick="signinmodal()">Sign Up</button>
         <div class="signin-display"></div>
-        <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4" onclick="loginmodal()">Log in</button>
+        <button class="btn btn-primary custom-rounded mt-5 me-5 pe-4 ps-4 przyciskkk" onclick="loginmodal()">Log in</button>
         <div class="login-display"></div>
         </div>
       <!-- Logo -->
       <div class="mt-3 mb-3 text-center">
-        <a class="navbar-brand fs-1" href="index.html">AlleBids</a>
+        <a class="navbar-brand fs-1" href="/index.html">AlleBids</a>
       </div>
     </div>
 
@@ -46,7 +54,7 @@
       <div class="nav justify-content-center mb-4 border-custom-color">
         <ul class="nav">
           <li class="nav-item px-3">
-            <a class="nav-link fs-6" href="all-auctions.html">Buy</a>
+            <a class="nav-link fs-6" href="/all-auctions.html">Buy</a>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link fs-6" href="#" id="creatListing" onclick="createListingModal()">Sell</a>
@@ -64,9 +72,9 @@
 
             <!-- Product  -->
 
-            <section class="Product">
+            <section class="Product" id="auction-container">
                 <div class="container mt-5">
-                    <h2 class="subject mb-3 fs-4">Title</h2>
+                    <h2 class="subject mb-3 fs-4">Loading...</h2>
 
                     <div class="container mt-5 mb-5">
                         <div class="row">
@@ -74,20 +82,17 @@
                           <!-- Product's pictures -->
                           <div class="col-md-6 mb-3">
                             <div class="row mb-3">
-                              <img src="./assets/img/gold sand 2.jpg" class="img-fluid custom-rounded2">
+                              <img src="Https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" alt="Loading Image.." class="img-fluid custom-rounded2">
                             </div>
                             <div class="row">
                               <div class="col-md-6 mb-3">
-                                <img src="./assets/img/gold sand 2.jpg" class="img-fluid custom-rounded2">
+                                <img src="Https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" alt="Loading Image.." class="img-fluid custom-rounded2">
                               </div>
                               <div class="col-md-6 mb-3">
-                                <img src="./assets/img/gold sand 2.jpg" class="img-fluid custom-rounded2">
-                                </div>
-                                <div class="row">
-                                <div class="col-md-6 mb-3">
-                                <img src="./assets/img/gold sand 2.jpg" class="img-fluid custom-rounded2">
+                                <img src="Https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" alt="Loading Image.." class="img-fluid custom-rounded2">
                               </div>
-                              </div>
+                        
+                              
                             </div>
                           </div>
 
@@ -101,25 +106,16 @@
                                 <h5 class="text-muted">Next bid</h5>
                               </div>
                               <div class="col-6 text-end">
-                                <h5>1800 credit</h5>
-                                <h5 class="text-muted">2000 credit</h5>
+                                <h5>... credit</h5>
+                                <h5 class="text-muted">... credit</h5>
                               </div>
                             </div>
                             <div class="row my-4 ">
                               <div class="col-6">
-                                <div class="dropdown">
-                                  <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Choose your bid
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">2000</a></li>
-                                      <li><a class="dropdown-item" href="#">2200</a></li>
-                                      <li><a class="dropdown-item" href="#">2400</a></li>
-                                  </ul>
-                              </div>  
+                                
                             </div>
                             <div class="col-6">
-                                <button class="btn btn-dark w-100">Bid Now</button>
+                                <button class="btn btn-dark w-100">Log in to bid</button>
                               </div>
                             </div>
                             <hr class="custom-hr">
@@ -129,13 +125,13 @@
                                 <h5 class="text-muted">Due date</h5>
                                 </div>
                                 <div class="col-6 text-end">
-                                  <h5 class="text-muted">23.04.2024</h5>
+                                  <h5 class="text-muted">...</h5>
                               </div>
                             </div>
                             <div class="row my-4">
                               <div class="col-12 mt-3">
                                 <h5>Description</h5>
-                                <p>A gold bar is a heavy, pure metal symbol of wealth, it's value <br> verified by its smooth surface's marked weight and fineness.</p>
+                                <p>Loading...</p>
                               </div>
                             </div>
                             <hr class="custom-hr mb-5">
@@ -144,13 +140,13 @@
                           
                             <!-- Shipping options -->
                             <div class="row mt-5">
-                              <div class="col-5">
+                              <div class="col-5 d-flex align-items-center justify-content-center">
                                 <img src="./assets/img/shipping/Group 46.jpg" class="img-fluid">
                               </div>
                               <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                 <p>or</p>
                               </div>
-                              <div class="col-5">
+                              <div class="col-5 d-flex align-items-center justify-content-center">
                                 <img src="./assets/img/shipping/Group 47.jpg" class="img-fluid">
                               </div>
                             </div>
@@ -168,49 +164,42 @@
         <!-- Other auctions  -->
 
 
-        <section class="other auctions">
+        <section class="other auctions" id="one-auction">
             <div class="container mt-5">
                 <h2 class="subject mb-3 fs-4">Other auctions</h2>
                         <div class="row">
                             <div class="col-md-4 mb-5">
                               <div class="">
-                                <img src="./assets/img/mona lisa 4.jpg" class="card-img-top custom-rounded2" alt="mona lisa">
+                                <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
                                 <div class="card-body">
-                                  <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                  <p class="card-text mb-0">Current bid: 5 credits</p>
-                                  <p class="card-text">Seller: Rusty3erf</p>
+                                  <h5 class="card-title mt-4 mb-2">Loading...</h5>
                                   <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5">Make an offer</a>
-                                </div>
+                                    <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
         
                     
                             <div class="col-md-4 mb-5">
-                                <div class="">
-                                    <img src="./assets/img/earrings.jpg" class="card-img-top custom-rounded2" alt="gold earrings">
-                                    <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                    <p class="card-text mb-0">Current bid: 5 credits</p>
-                                    <p class="card-text">Seller: Rusty3erf</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 offer-button">Make an offer</a>
-                                    </div>
+                              <div class="">
+                                <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
+                                <div class="card-body">
+                                  <h5 class="card-title mt-4 mb-2">Loading...</h5>
+                                  <div class="d-flex justify-content-center">
+                                    <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
                                   </div>
                                 </div>
+                              </div>
                               </div>
         
                               <div class="col-md-4 mb-5">
                                 <div class="">
-                                  <img src="./assets/img/sofa.jpg" class="card-img-top custom-rounded2" alt="sofa">
+                                  <img src="https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" class="card-img-top custom-rounded2" alt="Auction Without Image">
                                   <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-2">Luxury accessorize</h5>
-                                    <p class="card-text mb-0">Current bid: 5 credits</p>
-                                    <p class="card-text">Seller: Rusty3erf</p>
+                                    <h5 class="card-title mt-4 mb-2">Loading...</h5>
                                     <div class="d-flex justify-content-center">
-                                    <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-outline-primary custom-rounded pe-5 ps-5 custom-font">Make an offer</a>
+                                      <a class="btn btn-outline-primary custom-rounded pe-5 ps-5">...</a>
                                     </div>
                                   </div>
                                 </div>
@@ -284,9 +273,15 @@
                                  </div>
                              </footer>
                          </body>
+                     
+
                          
                          </html>
                 
+    
+    
+    
+    
     
     
     

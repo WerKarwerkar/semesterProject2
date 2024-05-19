@@ -1,9 +1,9 @@
-// Function to set storage
+// Funkcja do ustawiania storage
 export function setStorage(name, value) {
     localStorage.setItem(name, value);
 }
 
-// Function to get storage
+// Funkcja do pobierania wartości storage
 export function getStorage(name) {
     var loggedIn = localStorage.getItem(name);
     return loggedIn
