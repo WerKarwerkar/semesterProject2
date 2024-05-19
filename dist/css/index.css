@@ -10761,9 +10761,20 @@ textarea.form-control-lg {
   text-decoration-thickness: 3px;
 }
 
-.custom-rounded-bottom {
+.fluido {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+
+.custom-rounded-top {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
+}
+
+.custom-rounded-bottom {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
 }
 
 .category-text h5, .category-text .h5, .category-text h6, .category-text .h6 {
