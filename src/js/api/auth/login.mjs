@@ -36,7 +36,7 @@ window.checkLogState = async function() {
 export default async function login(profile, auto) {
     
     if(logged === true){
-        // console.log("zalogowany")
+        // console.log("logged in")
         return true;
     }
     const reg_message_display = document.querySelector('#log-in-form #reg-message');
@@ -55,7 +55,7 @@ export default async function login(profile, auto) {
             const responseData = await fetchResponse.json();
             const accesToken= responseData.data.accessToken
             logged = true
-            // console.log("ustanwowiaon logowanie")
+            // console.log("settet logged in")
             setStorage("accesToken", accesToken, 1);
             setStorage("profile", JSON.stringify(profile), 1);
             

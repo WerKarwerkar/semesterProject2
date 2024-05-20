@@ -10750,4 +10750,14 @@ textarea.form-control-lg {
   font-family: "Mplus 1p", sans-serif;
 }
 
+.custom-rounded-top {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.custom-rounded-bottom {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
 /*# sourceMappingURL=rest.css.map */

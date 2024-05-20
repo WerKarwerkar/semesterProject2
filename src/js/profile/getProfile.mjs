@@ -23,7 +23,7 @@ window.getProfile = async function(){
     let html = `
     <div class="row">
         <div class="col d-flex justify-content-evenly align-items-center px-5">
-            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid" alt="${profile.avatar.alt}">
+            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid fluido" alt="${profile.avatar.alt}">
             <h4 class="user"> Hello - ${profile.name}</h4>
         </div>
     </div>

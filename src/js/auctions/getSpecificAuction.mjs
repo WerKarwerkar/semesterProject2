@@ -6,7 +6,6 @@ const params = new URLSearchParams(query_url.search);
 const id = params.get('id');
 
 const no_img_url = "https://static.vecteezy.com/system/resources/previews/022/014/063/large_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg"
-const bid_price = 5
 const accessToken = getStorage('accesToken')
 
 
@@ -42,7 +41,6 @@ window.bid = async function(amount){
     
     
 }
-// bid(3)
 
 window.getSpecificAuction = async function(){
    
@@ -78,7 +76,7 @@ window.getSpecificAuction = async function(){
                     <img src="${element.media[1]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[1]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid custom-rounded-top custom-rounded-bottom">
                   </div>
                   <div class="col-md-6 mb-3">
-                    <img <img src="${element.media[2]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[2]?.alt || element.media[0]?.alt || 'No image'}"class="img-fluid custom-rounded-top custom-rounded-bottom">
+                    <img <img src="${element.media[2]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[2]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid custom-rounded-top custom-rounded-bottom">
                   </div>
                 </div>
               </div>

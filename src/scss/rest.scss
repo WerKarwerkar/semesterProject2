@@ -27,6 +27,8 @@ $custom-font: 'Mplus 1p', sans-serif;
 }
 
 // Profile.html //
+
+
 // Header //
 
 .user {
@@ -55,4 +57,14 @@ $custom-font: 'Mplus 1p', sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-family: $custom-font;
+  }
+
+  // Single Auction 
+  .custom-rounded-top {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+  }
+  .custom-rounded-bottom {
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
   }
