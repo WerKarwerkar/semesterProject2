@@ -60,7 +60,7 @@ window.getSpecificAuction = async function(){
     const html = `
     <div class="container mt-5">
         <div class="row">
-        <h2 class="subject mb-3 fs-4">${element.title}</h2>
+        <h2 class="subject mb-5 fs-4 wrap-text">${element.title}</h2>
         </div>
 
         <div class="container mb-5">
@@ -68,17 +68,18 @@ window.getSpecificAuction = async function(){
 
               <!-- Product's pictures -->
               <div class="col-md-6 mb-3">
-                <div class="row mb-3">
-                  <img src="${element.media[0]?.url || no_img_url}" alt="${element.media[0]?.alt || 'No image'}" class="img-fluid custom-rounded-top custom-rounded-bottom">
+                <div class=" mb-3">
+                  <img src="${element.media[0]?.url || no_img_url}" alt="${element.media[0]?.alt || 'No image'}" class="img-fluid fluido2 custom-rounded-top custom-rounded-bottom">
                 </div>
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <img src="${element.media[1]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[1]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid custom-rounded-top custom-rounded-bottom">
+                    <img src="${element.media[1]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[1]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid fluido custom-rounded-top custom-rounded-bottom">
                   </div>
                   <div class="col-md-6 mb-3">
-                    <img <img src="${element.media[2]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[2]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid custom-rounded-top custom-rounded-bottom">
+                    <img <img src="${element.media[2]?.url || element.media[0]?.url || no_img_url}" alt="${element.media[2]?.alt || element.media[0]?.alt || 'No image'}" class="img-fluid fluido custom-rounded-top custom-rounded-bottom">
                   </div>
                 </div>
+
               </div>
 
 
@@ -120,7 +121,7 @@ window.getSpecificAuction = async function(){
                   </div>
                 </div>
                 <div class="row my-4">
-                  <div class="col-12 mt-3">
+                  <div class="col-12 mt-3 wrap-text">
                     <h5>Description</h5>
                     <p>${element.description}</p>
                   </div>

@@ -58,7 +58,7 @@ window.getAuctions = async function(limit,auctions, elementid, header){
                 <div class="hi">
                     <img src="${element.media[0]?.url || no_img_url}" class="card-img-top custom-rounded-top img-fluid fluido" alt="${element.media[0]?.alt || "Auction Without Image"}">
                     <div class="card-body">
-                        <h5 class="card-title mt-4 mb-2">${element.title}</h5>
+                        <h5 class="card-title mt-4 mb-2 truncate">${element.title}</h5>
                         <p class="card-text mb-0">Current bid price: ${element.bids[element.bids.length - 1]?.amount + 1 || 0} credits</p>
                         <p class="card-text">Due date: ${formatDate(element.endsAt)}</p>
                         <div class="d-flex justify-content-center">

@@ -10767,6 +10767,12 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
+.fluido2 {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover;
+}
+
 .custom-rounded-top {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;

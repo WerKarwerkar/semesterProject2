@@ -10760,4 +10760,14 @@ textarea.form-control-lg {
   border-bottom-right-radius: 8px !important;
 }
 
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrap-text {
+  word-wrap: break-word;
+}
+
 /*# sourceMappingURL=rest.css.map */

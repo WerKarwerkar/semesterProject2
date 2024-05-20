@@ -68,3 +68,13 @@ $custom-font: 'Mplus 1p', sans-serif;
     border-bottom-left-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
   }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+   .wrap-text {
+    word-wrap: break-word;
+}
