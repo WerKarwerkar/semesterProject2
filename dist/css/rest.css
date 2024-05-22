@@ -10770,4 +10770,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
+.message {
+  font-family: "Mplus 1p", sans-serif;
+}
+
 /*# sourceMappingURL=rest.css.map */

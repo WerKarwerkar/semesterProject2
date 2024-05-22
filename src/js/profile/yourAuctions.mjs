@@ -38,7 +38,7 @@ window.getListings = async function(){
     let html = `
     <div class="container mt-5">
     <div class="row">
-        <div class="col d-flex justify-content-between align-items-center px-">
+        <div class="col d-flex justify-content-between align-items-center mb-3">
             <h2 class="subject fs-4">Your listings</h2>
             <a href="/all-auctions.html" class="btn btn-secondary pe-4 ps-4" id="credits">Credits</a>
         </div>

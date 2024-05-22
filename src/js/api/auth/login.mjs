@@ -19,7 +19,7 @@ window.checkLogState = async function() {
         // console.log(loginResponse)
         if (loginResponse === true) {
             logged = true;
-            // console.log("zalogowane");
+            // console.log("logged in");
             return true;
         } else {
             // console.log(loginResponse)
@@ -56,6 +56,7 @@ export default async function login(profile, auto) {
             const accesToken= responseData.data.accessToken
             logged = true
             // console.log("settet logged in")
+            profile = { ...profile, name: responseData.data.name };
             setStorage("accesToken", accesToken, 1);
             setStorage("profile", JSON.stringify(profile), 1);
             
@@ -87,7 +88,7 @@ export default async function login(profile, auto) {
             if(!auto){
                 reg_message_display.innerHTML = message
                 setTimeout(() => {
-                    window.location.reload()
+                    window.location=location
                 }, 1000);
             }
         }

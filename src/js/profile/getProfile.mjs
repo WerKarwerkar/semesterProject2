@@ -1,8 +1,15 @@
 import { API_PROFILE } from "../constants.mjs";
 import { getStorage } from "../storage.js";
 
+
+if(getStorage('accesToken')){
+    console.log("hi")
+}else{
+    window.location = "/"
+}
 const accessToken = getStorage('accesToken')
 const name = (JSON.parse(getStorage("profile")).name)
+
 
 window.getProfile = async function(){
     const url = API_PROFILE+`${name}`;
@@ -20,21 +27,30 @@ window.getProfile = async function(){
     const jsondata = await fetchResponse.json();
     const profile = jsondata.data
 
+  
+
+
     let html = `
     <div class="row">
-        <div class="col d-flex justify-content-evenly align-items-center px-5">
-            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid fluido" alt="${profile.avatar.alt}">
-            <h4 class="user"> Hello - ${profile.name}</h4>
+        <div class="col d-flex justify-content-evenly align-items-center mb-3 text-center">
+            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid " alt="${profile.avatar.alt}">
+            <h4 class="user wrap-text"> Hello - ${profile.name}</h4>
         </div>
     </div>
-    <input type="text" id="avatar">
-    <button onclick="changeAvatar()">Zmien</button>
+    <form class="d-flex justify-content-start">
+    <input class="form-control custom-rounded form-width" type="text" id="avatar" placeholder="Add image url">
+    <button class="btn btn-secondary pe-4 ps-4" onclick="changeAvatar()">Change Avatar</button>
     <h4 class="" id="avatar-error"></h4>
+    </form>
       <hr class="hr-custom mt-5">
     `
 
     document.querySelector('#profile-display').innerHTML = html
-    document.querySelector('#credits').innerHTML = ` ${profile.credits} Credits`
+   
+    setTimeout(() => {
+        document.querySelector('#credits').innerHTML = ` ${profile.credits} Credits`
+    }, 500);
+
     // window.location.reload()
 }
 getProfile()

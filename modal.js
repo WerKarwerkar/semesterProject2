@@ -34,8 +34,8 @@ const loginModal = `
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Login</button>
           </div>
-          <div class="d-grid gap-2">
-              <h3 id="reg-message"></h3>
+          <div class="d-grid gap-2 mt-2 text-center">
+              <h3 class="message fs-6" id="reg-message"></h3>
           </div>
         </form>
       </div>
@@ -80,8 +80,8 @@ const signinModal = `
           <div class="d-grid gap-2">
               <button class="btn btn-primary">Sign Up</button>
           </div>
-          <div class="d-grid gap-2">
-              <h3 id="reg-message"></h3>
+          <div class="d-grid gap-2 mt-2">
+              <h3 class="message fs-6" id="reg-message"></h3>
           </div>
         </form>
       </div>
@@ -127,8 +127,8 @@ const creatListing = `
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Create a Listing</button>
           </div>
-          <div class="d-grid gap-2">
-            <h3 id="reg-message"></h3>
+          <div class="d-grid gap-2 mt-2">
+            <h3 class="message fs-6" id="reg-message"></h3>
           </div>
         </form>
       </div>

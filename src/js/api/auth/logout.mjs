@@ -2,6 +2,6 @@ import { deleteStorage } from "../../storage.js";
 
 window.logOut = function(){
     deleteStorage("accesToken");
-    deleteStorage("Profile");
+    deleteStorage("profile");
     window.location.reload()
 }

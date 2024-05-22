@@ -38,7 +38,7 @@ export default async function register(profile) {
             console.log(message);
             reg_message_display.innerHTML = message
             setTimeout(() => {
-                // window.location=location
+                window.location.reload()
             }, 1000);
         }
     }
