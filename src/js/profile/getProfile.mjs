@@ -33,11 +33,11 @@ window.getProfile = async function(){
     let html = `
     <div class="row">
         <div class="col d-flex justify-content-evenly align-items-center mb-3 text-center">
-            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid " alt="${profile.avatar.alt}">
+            <img id="avatar-display" src="${profile.avatar.url}" class="img-fluid avatar" alt="${profile.avatar.alt}">
             <h4 class="user wrap-text"> Hello - ${profile.name}</h4>
         </div>
     </div>
-    <form class="d-flex justify-content-start">
+    <form class="d-flex justify-content-start px-5">
     <input class="form-control custom-rounded form-width" type="text" id="avatar" placeholder="Add image url">
     <button class="btn btn-secondary pe-4 ps-4" onclick="changeAvatar()">Change Avatar</button>
     <h4 class="" id="avatar-error"></h4>

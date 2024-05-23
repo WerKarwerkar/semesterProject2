@@ -10774,4 +10774,8 @@ textarea.form-control-lg {
   font-family: "Mplus 1p", sans-serif;
 }
 
+.avatar {
+  max-width: 30dvw;
+}
+
 /*# sourceMappingURL=rest.css.map */
